@@ -42,6 +42,7 @@ function FileUpload() {
 
       console.log(`file has been uploaded`);
       setMessage("file uploaded");
+      setFilename("choose file");
     } catch (err) {
       if (err.response.status === 500) {
         console.log("There was a problem with the server");
